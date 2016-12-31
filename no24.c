@@ -4,7 +4,7 @@ int main(){
   int n=5;
   int count=0;
   int ans=fibo(n,&count);
-  printf("fibo %d is %d and tree:%d",n,ans,count);
+  printf("fibo %d is %d and tree:%d\n",n,ans,count);
   return 0;
 }
 
