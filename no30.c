@@ -18,7 +18,7 @@ int main(){
     for(int i=0;i<100;i++){
       printf("%.2f",(float)i/100);
       for(int j=0;j<100;j++){
-        printf("%d ",array[j][i]);
+        printf("\t%d",array[j][i]);
       }
       printf("\n");
     }
