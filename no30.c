@@ -13,12 +13,13 @@ int main(){
           }
           ram=ram/i/RAND_MAX;//0~1
           array[(int)(ram*100)][i]++;
+          ram=0;
       }
     }
     for(int i=0;i<100;i++){
       printf("%.2f",(float)i/100);
       for(int j=0;j<100;j++){
-        printf("\t%d",array[j][i]);
+        printf("\t%d",array[i][j]);
       }
       printf("\n");
     }
@@ -30,7 +31,7 @@ int main(){
     for(int i=0;i<100;i++){
       fprintf(fp,"%.2f",(float)i/100);
       for(int j=0;j<100;j++){
-       fprintf(fp,"%d ",array[j][i]);
+       fprintf(fp,"%d ",array[i][j]);
       }
       fprintf(fp,"\n");
     }
